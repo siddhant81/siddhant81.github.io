@@ -1,62 +1,74 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: sans-serif;
+  color: #333;
 }
 
 .app-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background-image: url("https://www.pexels.com/photo/blur-bokeh-bright-bright-lights-276724/");
-  background-size: cover;
-  color: white;
-  padding: 20px;
+  padding: 2rem;
+  background-color: #eee;
 }
 
 .app-header img {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-bottom: 1rem;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-header p {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .app-main {
-  flex: 1;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .app-nav {
   display: flex;
-  background-color: #333;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .app-nav-item {
-  flex: 1;
-  text-align: center;
-  padding: 10px 0;
-  color: white;
-  font-size: 18px;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .app-nav-item.active {
-  background-color: #444;
+  background-color: #333;
+  color: #fff;
 }
 
 .app-tab {
-  flex: 1;
-  padding: 20px;
+  max-width: 600px;
+  text-align: justify;
 }
 
 .app-footer {
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #eee;
 }
