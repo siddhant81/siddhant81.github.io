@@ -5,7 +5,7 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState("resume");
+  const [activeTab, setActiveTab] = useState("blog");
 
   return (
     <div className="app">
