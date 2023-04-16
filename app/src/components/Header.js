@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import wandererImage from "../Images/wanderer.png";
 
 const Header = () => {
   return (
