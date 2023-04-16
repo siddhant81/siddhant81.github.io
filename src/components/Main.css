@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
 .app-nav {
@@ -22,6 +27,7 @@
   font-weight: bold;
   margin-right: 20px;
   padding: 10px;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-family: 'Google Sans', sans-serif;

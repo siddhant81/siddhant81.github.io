@@ -13,6 +13,9 @@ const Header = () => {
           <a href="https://www.linkedin.com/in/siddhant-gautam-80aa12147/" target="_blank" rel="noreferrer">
             <img src={require("../Images/linkedin.png")} alt="LinkedIn" className="header-icon" />
           </a>
+          <a href="https://github.com/siddhant81" target="_blank" rel="noreferrer">
+            <img src={require("../Images/github.png")} alt="Github" className="header-icon" />
+          </a>
           <a href="mailto:siddhant2219@gmail.com" target="_blank" rel="noreferrer">
             <img src={require("../Images/email.png")} alt="Email" className="header-icon" />
           </a>
