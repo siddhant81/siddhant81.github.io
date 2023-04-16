@@ -20,10 +20,10 @@ const App = () => {
             Resume
           </button>
           <button
-            className={`app-nav-item ${activeTab === "past-work" ? "active" : ""}`}
-            onClick={() => setActiveTab("past-work")}
+            className={`app-nav-item ${activeTab === "current-projects" ? "active" : ""}`}
+            onClick={() => setActiveTab("current-projects")}
           >
-            Past Work
+            Current Projects
           </button>
           <button
             className={`app-nav-item ${activeTab === "blog" ? "active" : ""}`}
@@ -45,9 +45,9 @@ const App = () => {
             </p>
           </div>
         )}
-        {activeTab === "past-work" && (
+        {activeTab === "current-projects" && (
           <div className="app-tab">
-            <h2>Past Work</h2>
+            <h2>Current Projects</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               placerat mauris et magna aliquam, at dignissim sem sagittis.
