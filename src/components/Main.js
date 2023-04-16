@@ -2,6 +2,7 @@ import React from "react";
 import Resume from "./Resume";
 import CurrentProjects from "./CurrentProjects";
 import Blog from "./Blog";
+import "./Main.css";
 
 const Main = ({ activeTab, setActiveTab }) => {
   return (

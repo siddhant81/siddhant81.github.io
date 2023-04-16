@@ -2,6 +2,7 @@
   display: flex;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  margin-top: 50px;
 }
 
 .header-avatar {
@@ -13,6 +14,7 @@
 
 .header-info {
   margin-right: 5rem;
+  padding-right: 10px;
 }
 
 .header-name {
@@ -31,7 +33,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 1rem;
+  margin-top: 50px;
   margin-right: 1rem;
 }
 
