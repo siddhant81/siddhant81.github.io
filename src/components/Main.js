@@ -4,6 +4,8 @@ import Home from "./Home";
 import Resume from "./Resume";
 import CurrentProjects from "./CurrentProjects";
 import Blog from "./Blog";
+import BlogPost from "./BlogPost";
+import posts from "./posts";
 import "./Main.css";
 
 const Main = () => {
@@ -45,6 +47,13 @@ const Main = () => {
           <Route exact path="/resume" element={<Resume />} />
           <Route exact path="/current-projects" element={<CurrentProjects />} />
           <Route exact path="/blog" element={<Blog />} />
+          {posts.map((post) => (
+            <Route
+              key={post.id}
+              path={`/blogs/:postId`}
+              element={<BlogPost />}
+            />
+          ))}
         </Routes>
       </main>
     </Router>

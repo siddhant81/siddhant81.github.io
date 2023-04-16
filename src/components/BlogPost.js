@@ -1,33 +1,19 @@
-import React, { useState } from 'react';
-import './BlogPost.css';
+import React from "react";
+import { Link, useParams } from "react-router-dom";
+import posts from "./posts";
+import "./BlogPost.css";
 
-const BlogPost = ({ title, content }) => {
-  const [expanded, setExpanded] = useState(false);
-
-  const handlePostClick = () => {
-    setExpanded(true);
-  };
-
-  const handleBackClick = () => {
-    setExpanded(false);
-  };
-
-  if (expanded) {
-    return (
-      <div className="blog-post-expanded" onClick={handleBackClick}>
-        <h3>{title}</h3>
-        <p>{content}</p>
-        <a href="#" className="back-button" onClick={handleBackClick}>
-          Back to All Posts
-        </a>
-      </div>
-    );
-  }
-
+const BlogPost = () => {
+  const { postId } = useParams();
+  const post = posts.find((post) => post.id === parseInt(postId));
+  
   return (
-    <div className="blog-post" onClick={handlePostClick}>
-      <h3>{title}</h3>
-      <p>{content}</p>
+    <div className="blog-post-expanded">
+      <h3>{post.title}</h3>
+      <p>{post.content}</p>
+      <Link to="/blog" className="back-button">
+        Back to All Posts
+      </Link>
     </div>
   );
 };

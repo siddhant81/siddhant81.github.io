@@ -1,33 +1,3 @@
-.blog-post {
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 800px;
-}
-
-.blog-post:hover {
-  background-color: #f2f2f2;
-}
-
-.blog-post h3 {
-  margin-top: 0;
-  font-size: 24px;
-  color: #333;
-}
-
-.blog-post p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #666;
-}
-
 .back-button {
   display: inline-block;
   padding: 6px 12px;
@@ -67,4 +37,8 @@
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+.blog-post-text {
+  text-decoration: none;
 }
