@@ -7,12 +7,21 @@ const CurrentProjects = () => {
       <h2>Current Projects</h2>
       <div className="current-projects-grid">
         <div className="current-projects-item">
-          <h3>Project 1</h3>
+          <h3>Chat App</h3>
           <p>
-            Chat App with Sheldon and RC.
+            E2E Chat App with Sheldon and RC.
           </p>
           <a href="https://github.com/aarcee141/chat-app">View project</a>
         </div>
+        <div className="current-projects-item">
+          <h3>Sign Launguage To Text</h3>
+          <p>
+            Converts American sign language to text in realtime. 
+            <el></el>College project with teammates.
+          </p>
+          <a href="https://github.com/luvk1412/Sign-Language-to-Text">View project</a>
+        </div>
+
       </div>
     </div>
   );

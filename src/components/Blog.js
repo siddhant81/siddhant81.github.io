@@ -11,7 +11,7 @@ const Blog = () => {
         <div key={post.id} className="blog-post">
           <Link to={`/blogs/${post.id}`} className="blog-post-text">
             <h3>{post.title}</h3>
-            <p>{post.content.substring(0, 100)}...</p>
+            <p>{post.content}</p>
           </Link>
         </div>
       ))}
